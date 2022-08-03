@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ahmedelhdad/Form-Redux/static/css/main.4fd0da3e.css",
-    "main.js": "/ahmedelhdad/Form-Redux/static/js/main.e57e8930.js",
-    "index.html": "/ahmedelhdad/Form-Redux/index.html",
-    "main.4fd0da3e.css.map": "/ahmedelhdad/Form-Redux/static/css/main.4fd0da3e.css.map",
-    "main.e57e8930.js.map": "/ahmedelhdad/Form-Redux/static/js/main.e57e8930.js.map"
+    "main.css": "/Form-Redux/static/css/main.4fd0da3e.css",
+    "main.js": "/Form-Redux/static/js/main.e57e8930.js",
+    "index.html": "/Form-Redux/index.html",
+    "main.4fd0da3e.css.map": "/Form-Redux/static/css/main.4fd0da3e.css.map",
+    "main.e57e8930.js.map": "/Form-Redux/static/js/main.e57e8930.js.map"
   },
   "entrypoints": [
     "static/css/main.4fd0da3e.css",
