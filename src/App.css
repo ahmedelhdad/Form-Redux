@@ -1,39 +1,118 @@
-.App {
-  text-align: center;
+body
+{
+    background: rgb(2, 2, 26);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  
+html {
+    scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background: rgb(0, 255, 255);
+    filter: blur(140px);
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body::after {
+    content: "";
+    position: fixed;
+    top: 200px;
+    left: 250px;
+    height: 200px;
+    width: 200px;
+    background: rgb(183, 0, 255);
+    filter: blur(140px);
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.App
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.App .Data
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .boy,
+.container .girl
+{
+    position: relative;
+    box-shadow: 0 0 10px rgb(183, 0, 255);
+    width: 300px;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.container .boy:hover
+{
+    background-color: blue;
+}
+.container .girl
+{
+    box-shadow:  0 0 10px rgb(0, 255, 255);
+}
+.container .girl:hover
+{
+    background-color: rgb(0, 255, 255);
+}
+.container .boy .close,
+.container .girl .close
+{
+    content: "x";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    padding: 10px;
+    cursor: pointer;
+}
+.AddNames
+{
+    padding: 20px;
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    cursor: pointer;
+    background: rgb(183, 0, 255);
+}
+.add
+{
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+form 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+form  input 
+{
+    padding: 10px 10px;
 }
